@@ -30,7 +30,7 @@ class inventory_informa:
                     if quantity>0 and i[2]!=cost: #这里是进货
                         i[2]=(quantity*cost+i[1]*i[2])/(quantity+i[1])
                         i[1]=quantity+i[1]
-                        return f"Suggest to adjust the price.{i[0]} remains {i[1]}"
+                        return "Suggest to adjust the price.{} remains {}".format(i[0], i[1])
                     else:
                         old=i[1]
                         i[1]=quantity+old
@@ -102,7 +102,7 @@ class extend_informa(inventory_informa):
                 if quantity>0 and i[2]!=cost: #这里是进货
                     i[2]=(quantity*cost+i[1]*i[2])/(quantity+i[1])
                     i[1]=quantity+i[1]
-                    return f"Suggest to adjust the price.{i[0]} remains {i[1]}"
+                    return "Suggest to adjust the price.{} remains {}".format(i[0], i[1])
                 else:
                     old=i[1]
                     i[1]=quantity+old
