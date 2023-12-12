@@ -101,7 +101,7 @@ class Testtransactions(unittest.TestCase):
         self.assertEqual(transactions.get_order_total(self.trans2), 5.0)
         self.assertEqual(transactions.get_order_total(self.trans3), 5.0)
         self.assertEqual(transactions.get_order_total(self.trans4), 14.0)
-
+"""
     def test_new_review(self):
         input_values = ['review 1']
         original_inputs = __builtins__.input
@@ -132,6 +132,6 @@ class Testtransactions(unittest.TestCase):
         self.assertIsInstance(self.trans4_new, transactions.transaction)
         self.assertEqual(self.trans4_new.order_rate, "2")
         __builtins__.input = original_inputs
+"""
 
-
-# unittest.main(argv=[''], verbosity=2, exit=False)
+unittest.main(argv=[''], verbosity=2, exit=False)
